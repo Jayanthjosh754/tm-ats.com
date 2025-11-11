@@ -7,7 +7,7 @@ import { componentTagger } from "lovable-tagger";
 export default defineConfig(({ mode }) => {
   // Load env so we can set base path for GitHub Pages
   const env = loadEnv(mode, process.cwd(), "");
-  const base = env.VITE_BASE_PATH || "/";
+  const base =  "/";
 
   return {
     base,
