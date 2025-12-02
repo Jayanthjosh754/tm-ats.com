@@ -2,7 +2,7 @@ import { Users, Award, TrendingUp, CheckCircle2, Linkedin, Mail } from "lucide-r
 import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 import { useEffect, useRef } from "react";
 import ceoImage from "@/assets/ceo-profile.jpg";
-// import directorImage from "@/assets/director-profile.jpg";
+import directorImage from "@/assets/director-profile.jpg";
 
 const AnimatedCounter = ({ value }: { value: string }) => {
   const count = useMotionValue(0);
@@ -44,13 +44,13 @@ const Team = () => {
       email: "info@tmats.com",
       linkedin: "#"
     },
-    // {
-    //   name: "Mounika",
-    //   role: "Director of Operations",
-    //   image: directorImage,
-    //   email: "mounika@tmats.com",
-    //   linkedin: "#"
-    // }
+    {
+      name: "Mounika",
+      role: "Director of Operations",
+      image: directorImage,
+      email: "mounika@tmats.com",
+      linkedin: "#"
+    }
   ];
 
   return (
